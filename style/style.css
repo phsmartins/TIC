@@ -332,3 +332,61 @@ main {
     color: white;
     font-weight: 300;
 }
+
+#metaverso .metaverso-box4 {
+    padding: 100px 0;
+    background-color: #FFFAF1;
+}
+
+.metaverso-box4 h2 {
+    font-size: 40px;
+    color: #011126;
+    max-width: 700px;
+}
+
+.metaverso-box4 .text-metaverso {
+    width: 580px;
+}
+
+#metaverso .metaverso-box5 {
+    padding: 0 0 100px;
+    background-color: #FFFAF1;
+
+    position: relative;
+    overflow: auto;
+    overflow: hidden;
+}
+
+.metaverso-box5 .center {
+    position: relative;
+    z-index: 2;
+}
+
+.metaverso-box5 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #011126;
+
+    margin-bottom: 80px;
+}
+
+.metaverso-box5 .img-metaverso {
+    text-align: center;
+}
+
+.metaverso-box5 .text-metaverso {
+    max-width: 550px;
+    margin: 0;
+}
+
+.bg-metaverso-box5 {
+    background-color: #E4CDF1;
+    width: 1500px;
+    height: 600px;
+
+    position: absolute;
+    right: -400px;
+    bottom: -400px;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
