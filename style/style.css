@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1, h3 {
@@ -53,7 +57,7 @@ main {
 }
 
 #autoNav {
-    padding: 20px 0;
+    padding: 20px 100px;
 
     position: fixed;
     z-index: 5;
@@ -80,7 +84,28 @@ main {
     color: #542D6B;
     opacity: .7;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+    transition: opacity 0.4s;
+}
+
+#autoNav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #542D6B;
+
+  position: relative;
+  bottom: -20px;
+
+  display: block;
+
+  transition: width 0.2s;
+}
+
+#autoNav ul li a.active::after,
+#autoNav ul li a:hover::after {
+  padding-inline: 10;
+  width: 100%;
 }
 
 #autoNav.scroll{
@@ -88,7 +113,9 @@ main {
     box-shadow: 0 0 8px 0 rgb(133, 133, 133);
 }
 
+#autoNav ul li a.active,
 #autoNav ul li a:hover {
+    opacity: 1;
     font-weight: bold;
 }
 
@@ -404,7 +431,7 @@ main {
     z-index: 1;
 }
 
-#midias-digitais .midias-box1 {
+#midiasDigitais .midias-box1 {
     padding: 150px 0;
     background-color: #F7F9F9;
 }
@@ -451,7 +478,7 @@ main {
     margin-bottom: 10px;
 }
 
-#midias-digitais .midias-box2 {
+#midiasDigitais .midias-box2 {
     padding: 100px 0;
 
     position: relative;
@@ -529,7 +556,7 @@ main {
     z-index: 1;
 }
 
-#midias-digitais .midias-box3 {
+#midiasDigitais .midias-box3 {
     padding: 100px 0;
     background-color: #FFFAF1;
 }
@@ -687,4 +714,23 @@ main {
 
 .img-bio-box3 {
     text-align: center;
+}
+
+#backToTopButton {
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  z-index: 5 ;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
