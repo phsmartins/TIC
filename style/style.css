@@ -11,7 +11,7 @@ h1, h3 {
     text-transform: uppercase;
 }
 
-p {
+p, li {
     line-height: 28px;
     color: #495057;
 }
@@ -527,4 +527,56 @@ main {
     bottom: -400px;
     transform: rotate(30deg);
     z-index: 1;
+}
+
+#midias-digitais .midias-box3 {
+    padding: 100px 0;
+    background-color: #FFFAF1;
+}
+
+.title-midias-box3 {
+    text-align: center;
+}
+
+.title-midias-box3 h3 {
+    font-size: 16px;
+    color: #03738C;
+}
+
+.title-midias-box3 h2 {
+    font-size: 40px;
+    color: #011126;
+
+    margin: 20px auto 60px;
+    max-width: 620px;
+}
+
+.midia-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 100px;
+}
+
+.text-midia-flex {
+    max-width: 620px;
+}
+
+.text-midia-flex h3 {
+    text-transform: initial;
+    color: #03738C;
+    font-size: 24px;
+}
+
+.text-midia-flex p {
+    margin-top: 40px;
+}
+
+.text-midia-flex ul {
+    margin: 10px 0 0 30px;
+}
+
+.img-midia-flex {
+    text-align: center;
 }
