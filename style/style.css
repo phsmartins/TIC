@@ -654,3 +654,37 @@ main {
     font-weight: 300;
     max-width: 700px;
 }
+
+#bioinformatica .bio-box3 {
+    padding: 100px 0;
+}
+
+.bio-box3 h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #A558D1;
+}
+
+.bio-box3 h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #011126;
+    
+    margin: 20px auto 60px;
+
+    max-width: 600px;
+}
+
+.box-text-bio-box3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-bio-box3 {
+    max-width: 600px;
+}
+
+.img-bio-box3 {
+    text-align: center;
+}
