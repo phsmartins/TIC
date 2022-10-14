@@ -13,12 +13,17 @@ h1, h3 {
 
 p {
     line-height: 28px;
+    color: #495057;
 }
 
 .center {
     max-width: 1180px;
     padding: 0 2%;
     margin: 0 auto;
+}
+
+.w33 {
+    width: 33%;
 }
 
 .w40 {
@@ -31,6 +36,10 @@ p {
 
 .w60 {
     width: 60%;
+}
+
+.w66 {
+    width: 66%;
 }
 
 main {
@@ -440,4 +449,82 @@ main {
 .list-midias li {
     margin-left: 30px;
     margin-bottom: 10px;
+}
+
+#midias-digitais .midias-box2 {
+    padding: 100px 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.midias-box2 .center {
+    position: relative;
+    z-index: 2;
+}
+
+.midias-flex1, .midias-flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.midias-beneficios {
+    margin-left: 15px;
+    max-width: 700px;
+}
+
+.midias-beneficios h3 {
+    color: #03738C;
+    font-size: 16px;
+}
+
+.midias-beneficios h2 {
+    margin: 20px 0 40px;
+
+    font-size: 40px;
+    color: #212529;
+}
+
+.midia-single-box {
+    background-color: #FFFAF1;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #CEEEF2;
+    height: 290px;
+    max-width: 340px;
+    margin: 25px 15px;
+}
+
+.title-midia-single-box {
+    display: flex;
+    align-items: center;
+}
+
+.title-midia-single-box img {
+    width: 30px;
+}
+
+.title-midia-single-box p {
+    color: #03738C;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.text-midia-single-box p {
+    margin-top: 20px;
+}
+
+.bg-midias {
+    background-color: #CEEEF2;
+    width: 1500px;
+    height: 600px;
+
+    position: absolute;
+    left: -400px;
+    bottom: -400px;
+    transform: rotate(30deg);
+    z-index: 1;
 }
