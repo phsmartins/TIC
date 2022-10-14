@@ -794,7 +794,6 @@ footer {
 
 footer .center {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -876,6 +875,17 @@ footer h1 {
     
     max-width: 600px;
     padding-left: 20px;
+}
+
+.dev p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+
+    padding: 20px 0;
+
+    background-color: #011126;
 }
 
 #backToTopButton {
