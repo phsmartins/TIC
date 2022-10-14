@@ -169,23 +169,24 @@ main {
 }
 
 #members {
-    background-color: #FFFAF1;
-
-    border: 1px solid #DCE9E2;
-    border-radius: 7px;
-
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 30px 55px;
-
-    position: relative;
-    top: -80px;
-    z-index: 4;
+  background-color: rgb(255, 250, 241, 0.4);
+  backdrop-filter: blur(5px);
+  
+  border-radius: 7px;
+  box-shadow: 0 0 8px 0 #DCE9E2;
+  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 104px;
+  
+  position: relative;
+  top: -100px;
+  z-index: 4;
 }
 
 #members h2 {
-    font-size: 20px;
-    color: #011126;
+    font-size: 16px;
+    color: #A558D1;
     text-transform: uppercase;
 
     margin-bottom: 30px;
@@ -211,7 +212,8 @@ main {
 }
 
 .name {
-    font-size: 19px;
+    font-size: 16px;
+    font-weight: bold;
     color: #03738C;
 }
 
@@ -714,6 +716,76 @@ main {
 
 .img-bio-box3 {
     text-align: center;
+}
+
+#bioinformatica .bio-box4 {
+    padding: 100px 0;
+    background-color: #F7F9F9;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.bio-box4 .center {
+    position: relative;
+    z-index: 2;
+}
+
+.title-bio-box4 {
+    text-align: center;
+}
+
+.title-bio-box4 h3 {
+    font-size: 16px;
+    color: #00856F;
+}
+
+.title-bio-box4 h2 {
+    font-size: 40px;
+    color: #212529;
+    margin: 20px 0 40px;
+}
+
+.title-bio-box4 p {
+    max-width: 600px;
+    margin: 0 auto 80px;
+}
+
+.flex-box4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.single-flex-box4 {
+    max-width: 350px;
+    background-color: white;
+
+    padding: 24px;
+    margin-bottom: 40px;
+
+    border: 1px solid #DCE9E2;
+    border-radius: 6px;
+}
+
+.single-flex-box4 h4 {
+    color: #212529;
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.bg-bio-box4 {
+    background-color: #DCE9E2;
+    width: 1500px;
+    height: 600px;
+
+    position: absolute;
+    right: -400px;
+    bottom: -400px;
+    transform: rotate(-30deg);
+    z-index: 1;
 }
 
 #backToTopButton {
