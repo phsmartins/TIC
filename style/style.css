@@ -788,6 +788,96 @@ main {
     z-index: 1;
 }
 
+footer {
+    padding: 100px 0;
+}
+
+footer .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnReferencias {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+.btnReferencias button {
+    cursor: pointer;
+
+    width: 80px;
+    padding: 5px 0;
+
+    border: none;
+    font-size: 18px;
+
+    opacity: .6;
+}
+
+#sitesButton {
+    border-radius: 100px 0 0 100px;
+    margin-right: -2px;
+}
+
+.btnReferencias .active {
+    background-color: #011C40;
+    color: white;
+    opacity: 1;
+}
+
+#abntButton {
+    border-radius: 0 100px 100px 0;
+    margin-left: -2px;
+}
+
+.referencias h2 {
+    color: #212529;
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+#sites a {
+    display: block;
+    color: #011C40;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+
+    transition: .4s;
+}
+
+#sites a:hover {
+    color: #03738C;
+    text-decoration: underline;
+}
+
+#abnt {
+    display: none;
+}
+
+#abnt p, #abnt a {
+    color: #011C40;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#abnt a:hover {
+    color: #03738C;
+    text-decoration: underline;
+}
+
+footer h1 {
+    font-weight: 400;
+    color: #011C40;
+    font-size: 36px;
+    
+    max-width: 600px;
+    padding-left: 20px;
+}
+
 #backToTopButton {
   position: fixed;
   bottom: 10px;

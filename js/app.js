@@ -48,5 +48,26 @@ function activateMenuAtCurrentSection(section) {
   }
 }
 
+const sitesButton = document.querySelector("#sitesButton");
+const abntButton = document.querySelector("#abntButton");
+const sites = document.querySelector("#sites");
+const abnt = document.querySelector("#abnt");
+
+sitesButton.addEventListener("click", () => {
+  abntButton.removeAttribute("class");
+  sitesButton.setAttribute("class", "active");
+
+  abnt.style.display = "none";
+  sites.style.display = "block";
+});
+
+abntButton.addEventListener("click", () => {
+  sitesButton.removeAttribute("class");
+  abntButton.setAttribute("class", "active");
+
+  sites.style.display = "none";
+  abnt.style.display = "block";
+});
+
 
 
