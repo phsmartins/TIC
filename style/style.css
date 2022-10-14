@@ -85,7 +85,7 @@ main {
 
 #autoNav.scroll{
     background-color: white;
-    box-shadow: -2px 8px 35px 1px rgb(133, 133, 133);
+    box-shadow: 0 0 8px 0 rgb(133, 133, 133);
 }
 
 #autoNav ul li a:hover {
@@ -246,7 +246,7 @@ main {
     overflow: auto;
     overflow: hidden;
     
-    padding: 100px 0;
+    padding: 150px 0;
 
     background-color: #FFFAF1;
 }
@@ -405,7 +405,7 @@ main {
 }
 
 #midias-digitais .midias-box1 {
-    padding: 100px 0;
+    padding: 150px 0;
     background-color: #F7F9F9;
 }
 
@@ -579,4 +579,55 @@ main {
 
 .img-midia-flex {
     text-align: center;
+}
+
+#bioinformatica .bio-box1 {
+    padding: 150px 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.bio-box1 .center {
+    position: relative;
+    z-index: 2;
+}
+
+.bio-box1 h2 {
+    font-size: 40px;
+    color: #212529;
+    text-transform: uppercase;
+
+    padding-left: 25px;
+
+    border-left: 10px solid #00856F;
+}
+
+.bio-box1 h3 {
+    font-size: 16px;
+    color: #00856F;
+
+    margin-top: 25px;
+}
+
+.text-bio-box1 {
+    width: 700px;
+    margin-top: 60px;
+}
+
+.text-bio-box1 p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.bg-bio-box1 {
+    background-color: #DCE9E2;
+    width: 1100px;
+    height: 1800px;
+
+    position: absolute;
+    left: -300px;
+    top: 0;
+    transform: rotate(-40deg);
+    z-index: 1;
 }
