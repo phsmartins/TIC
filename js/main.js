@@ -1,6 +1,6 @@
 const linkCSS = document.querySelector("#linkCSS");
-const btnCircle = document.querySelector("#btnCircle");
 const btn = document.querySelector("#btn");
+const btnCircle = document.querySelector("#btnCircle");
 
 btn.addEventListener("click", () => {
     if (btnCircle.hasAttribute("class")) {
