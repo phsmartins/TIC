@@ -11,6 +11,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #542D6B;
+}
+
 h1, h3 {
     text-transform: uppercase;
 }
@@ -52,7 +60,6 @@ main {
     background-color: #F9FBFC;
     height: 90vh;
 
-    overflow: auto;
     overflow: hidden;
 }
 
@@ -109,7 +116,8 @@ main {
 }
 
 #autoNav.scroll{
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
     box-shadow: 0 0 8px 0 rgb(133, 133, 133);
 }
 
@@ -169,8 +177,8 @@ main {
 }
 
 #members {
-  background-color: rgb(255, 250, 241, 0.4);
-  backdrop-filter: blur(5px);
+  background-color: rgb(255, 250, 241, 0.6);
+  backdrop-filter: blur(8px);
   
   border-radius: 7px;
   box-shadow: 0 0 8px 0 #DCE9E2;
@@ -272,7 +280,6 @@ main {
 #metaverso .metaverso-box1 {
     position: relative;
 
-    overflow: auto;
     overflow: hidden;
     
     padding: 150px 0;
@@ -395,7 +402,6 @@ main {
     background-color: #FFFAF1;
 
     position: relative;
-    overflow: auto;
     overflow: hidden;
 }
 
@@ -691,7 +697,7 @@ main {
 .bio-box3 h3 {
     text-align: center;
     font-size: 16px;
-    color: #A558D1;
+    color: #00856F;
 }
 
 .bio-box3 h2 {
