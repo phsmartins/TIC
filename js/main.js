@@ -1,16 +1,16 @@
 const linkCSS = document.querySelector("#linkCSS");
-const div = document.getElementById("div");
+const btnCircle = document.querySelector("#btnCircle");
 const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
-    if (div.hasAttribute("class")) {
-        div.removeAttribute("class");
-        div.setAttribute("name", "liga");
+    if (btnCircle.hasAttribute("class")) {
+        btnCircle.removeAttribute("class");
+        btnCircle.setAttribute("name", "liga");
 
         linkCSS.removeAttribute("href");
-    } else if (div.hasAttribute("name")) {
-        div.removeAttribute("name");
-        div.setAttribute("class", "desliga");
+    } else if (btnCircle.hasAttribute("name")) {
+        btnCircle.removeAttribute("name");
+        btnCircle.setAttribute("class", "desliga");
 
         linkCSS.setAttribute("href", "style/style.css");
     }
