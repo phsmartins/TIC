@@ -1,40 +1,63 @@
-.box-btn {
+.switch__container {
     position: fixed;
-    top: 20px;
-    right: 30px;
     z-index: 10;
+    right: 20px;
+    top: 20px;
+    
+    width: 60px;
 }
-
-#btn {
-    background-color: #b1a5a5;
-    border: none;
-    border-radius: 250px;
-    border: 3px solid #542D6B;
-    font-size: 18px;
-    cursor: pointer;
-
-    width: 50px;
-    height: 25px;
-
+  
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+  
+.switch + label {
+    display: block;
     position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+  
+.switch--shadow + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #daaadd;
+    border-radius: 60px;
 }
 
-#btnCircle {
-    height: 18px;
-    width: 18px;
-    background-color: white;
-    border-radius: 250px;
-    transition: .4;
-}
-
-div[name="liga"] {   
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+    display: block;
     position: absolute;
+    top: 0;
     right: 0;
-    top: 0;
+    bottom: 0;
+    content: "";
 }
 
-.desliga {
-    position: absolute;
+.switch--shadow + label:before {
     left: 0;
-    top: 0;
+    background-color: #542D6B;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.switch--shadow + label:after {
+    width: 31px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.switch--shadow:checked + label:before {
+    background-color: #f1f1f1;
+}
+
+.switch--shadow:checked + label:after {
+    transform: translateX(-30px);
 }

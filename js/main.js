@@ -1,17 +1,12 @@
+const removeCSSButton = document.querySelector("#removeCSSButton");
 const linkCSS = document.querySelector("#linkCSS");
-const btn = document.querySelector("#btn");
-const btnCircle = document.querySelector("#btnCircle");
 
-btn.addEventListener("click", () => {
-    if (btnCircle.hasAttribute("class")) {
-        btnCircle.removeAttribute("class");
-        btnCircle.setAttribute("name", "liga");
-
+removeCSSButton.addEventListener("click", () => {
+    if (linkCSS.hasAttribute("href")) {
         linkCSS.removeAttribute("href");
-    } else if (btnCircle.hasAttribute("name")) {
-        btnCircle.removeAttribute("name");
-        btnCircle.setAttribute("class", "desliga");
-
+        linkCSS.classList.add("validation");
+    } else if (linkCSS.hasAttribute("class")) {
         linkCSS.setAttribute("href", "style/style.css");
+        linkCSS.removeAttribute("class");
     }
 });
