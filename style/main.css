@@ -1,3 +1,7 @@
+#removeCSSButton {
+    padding: 0;
+}
+
 .switch__container {
     position: fixed;
     z-index: 10;
@@ -5,33 +9,20 @@
     top: 20px;
     
     width: 60px;
+    height: 30px;
 }
   
 .switch {
-    visibility: hidden;
-    position: absolute;
-    margin-left: -9999px;
+    display: none;
 }
   
 .switch + label {
     display: block;
-    position: relative;
     cursor: pointer;
-    outline: none;
-    user-select: none;
-}
-  
-.switch--shadow + label {
-    padding: 2px;
-    width: 60px;
-    height: 30px;
-    background-color: #daaadd;
-    border-radius: 60px;
 }
 
 .switch--shadow + label:before,
 .switch--shadow + label:after {
-    display: block;
     position: absolute;
     top: 0;
     right: 0;
