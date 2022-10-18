@@ -1,55 +1,50 @@
-window.addEventListener('scroll', onScroll); //quando a exibição da janela é rolada, a funcão onScroll é acionada
+window.addEventListener('scroll', onScroll);
 
-onScroll(); // a função onSroll é chamada 
+onScroll();
+function onScroll() {
+    showNavOnScroll();
+    showBackToTopButtonOnScroll();
 
-function onScroll() { // toda vez que a função onScroll for acionada, ela irá chamar as seguintes funções:
-  mostraFundoMenu();
-  mostraBotaoVoltarTopo();
-
-  ativaMenuSecaoAtual(home);
-  ativaMenuSecaoAtual(metaverso);
-  ativaMenuSecaoAtual(midiasDigitais);
-  ativaMenuSecaoAtual(bioinformatica);
+    activateMenuAtCurrentSection(home);
+    activateMenuAtCurrentSection(metaverso);
+    activateMenuAtCurrentSection(midiasDigitais);
+    activateMenuAtCurrentSection(bioinformatica);
 }
 
-function mostraFundoMenu() { // função responsável por mostrar e esconder o fundo da barra do menu
-  //A scrollY é uma propriedade de somente leitura e que retorna os pixels que um documento percorreu do canto superior esquerdo da janela.
-  if (scrollY > 0) { //Aqui é verificado se o documento não está no topo
-    autoNav.classList.add('scroll'); //o elemento cujo id é "autoNav" irá receber uma class chamada "scroll"
+function showNavOnScroll() {
+    if (scrollY > 0) {
+      autoNav.classList.add('scroll');
+    } else {
+      autoNav.classList.remove('scroll');
+    }
+  }
+
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 550) {
+    backToTopButton.classList.add('show');
   } else {
-    autoNav.classList.remove('scroll'); //será retirado do elemento, cujo id é "autoNav", a class chamada "scroll"
+    backToTopButton.classList.remove('show');
   }
 }
 
-function mostraBotaoVoltarTopo() { // função responsável por mostrar e esconder o botão de subir para o topo
-  if (scrollY > 550) { // é verificado se o valor retornado pelo scrollY é superior a 550px
-    backToTopButton.classList.add('show');//o elemento cujo id é "backToTopButton" irá receber uma class chamada "show"
-  } else {
-    backToTopButton.classList.remove('show');//será retirado do elemento, cujo id é "backToTopButton", a class chamada "show"
-  }
-}
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2;
 
-function ativaMenuSecaoAtual(section) { // função responsável por mostrar no menu em qual seção está do documento
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
 
-  //A propriedade innerHeightA de somente leitura da Window interface retorna a altura interna da janela em pixels 
-  
-  const centroTela = scrollY + innerHeight / 2; // a constante 'centroTela' receberá o valor de scrollY mais a metade do valor do innerHeight, basicamente, vai calcular o centro da tela
+  const sectionEndsAt = sectionTop + sectionHeight;
+  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
 
-  const TopoSecao = section.offsetTop; //a constante 'TopoSecao' vai receber a medida, em pixels, da distância do elemento atual, que foi passado por parâmetro quando a função foi chamada, em relação ao topo do elemento pai
-  const alturaSecao = section.offsetHeight; //a constante 'alturaSecao' vai receber o tamanho da seção passada por parâmetro através da propriedade offsetHeight
-  const topoSecaoAlcancouOuPassouCentroTela = centroTela >= TopoSecao; //vai receber um valor booleano a partir da verificação de que se a parte de cima da seção alcançou o centro da tela 
+  const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine;
 
-  const fimSecao = TopoSecao + alturaSecao; // calcula a altura do final da seção
-  const fimSecaoAlcancouOuPassouCentroTela = fimSecao <= centroTela; //vai receber um valor booleano a partir da verificação de que se a parte de baixo da seção passou do centro da tela
+  const sectionId = section.getAttribute('id');
+  const menuElement = document.querySelector(`#autoNav a[href*=${sectionId}]`);
 
-  const dentroLimitesSecao = topoSecaoAlcancouOuPassouCentroTela && !fimSecaoAlcancouOuPassouCentroTela; //vai receber um valor booleano a partir da verificação de que se a parte de cima da seção alcançou o centro da tela e a parte de baixo da seção não passou do centro da tela
-
-  const idSecao = section.getAttribute('id'); //vai pegar o valor do atributo id da seção
-  const elementoMenu = document.querySelector(`#autoNav a[href*=${idSecao}]`); // vai pegar o elemento 'a', que está dentro de um elemento que tenha a id 'autoNav', cujo o atributo 'href' tenha o valor obtido na idSecao
-
-  elementoMenu.classList.remove('active'); // vai remover a class 'actvive' do elemento 'a' cujo o atributo 'href' tenha o valor da seção que chamou a função
-  if (dentroLimitesSecao) {
-    elementoMenu.classList.add('active'); // caso a a parte de cima da seção tenha alcançado o centro da tela e a parte de baixo da seção não tenha passado do centro da tela, a âncora correspondente a essa seção vai receber uma class 'active'  
+  menuElement.classList.remove('active');
+  if (sectionBoundaries) {
+    menuElement.classList.add('active');
   }
 }
 
