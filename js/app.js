@@ -69,5 +69,10 @@ abntButton.addEventListener("click", () => {
   abnt.style.display = "block";
 });
 
+function openMenu() {
+  document.body.classList.add('menu-expanded');
+}
 
-
+function closeMenu() {
+  document.body.classList.remove('menu-expanded');
+}
