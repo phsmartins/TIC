@@ -131,6 +131,11 @@ main {
     transition: 200ms;
 }
 
+nav#autoNav .close-menu,
+nav#autoNav .open-menu{
+  display: none;
+}
+
 #textMain {
     position: relative;
     z-index: 2;
@@ -912,3 +917,4 @@ footer h1 {
   visibility: visible;
   transform: translateY(0);
 }
+
