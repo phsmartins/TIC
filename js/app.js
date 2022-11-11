@@ -71,8 +71,14 @@ abntButton.addEventListener("click", () => {
 
 function openMenu() {
   document.body.classList.add('menu-expanded');
+
+  removeCSSButton.style.display = "none";
+  backToTopButton.style.display = "none";
 }
 
 function closeMenu() {
   document.body.classList.remove('menu-expanded');
+
+  removeCSSButton.style.display = "block";
+  backToTopButton.style.display = "block";
 }
