@@ -920,6 +920,10 @@ footer h1 {
 
 @media (max-width: 1024px){
 
+    .w33, .w40, .w50, .w60, .w66 {
+        width: 100%;
+    }
+
     nav {
         display: flex;
       
@@ -930,7 +934,7 @@ footer h1 {
         width: 100vw;
       
         z-index: 100;
-      }
+    }
       
 
     nav#autoNav .close-menu,
@@ -995,6 +999,64 @@ footer h1 {
     body.menu-expanded button {
         position: relative;
         z-index: 100;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    #textMain h1 {
+        max-width: 100%;
+        font-size: 40px;
+    }
+    
+    .img-main {
+        position: absolute;
+        bottom: -5px;
+        right: -50px;
+    }
+    
+    .img-main img {
+        width: 380px;
+    }
+    
+    .bg-main {
+        background-color: #CEEEF2;
+        width: 700px;
+        height: 1300px;
+    
+        position: absolute;
+        right: -200px;
+        top: -150px;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    #members {
+        padding: 30px;
+
+        top: 0;
+    }
+      
+      #members h2 {
+          font-size: 21px;
+          text-align: center;
+      }
+      
+    .member-box {
+        display: block;
+    }
+      
+    .name {
+      font-size: 21px;
+    }
+      
+    .instagram a {
+        font-size: 18px;
+    }
+      
+    .line-members {
+        display: none;      
     }
     
 }
