@@ -7,6 +7,10 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +29,7 @@ h1, h3 {
 
 p, li {
     line-height: 28px;
+    font-size: 1.6rem;
     color: #495057;
 }
 
@@ -91,7 +96,7 @@ main {
     color: #542D6B;
     opacity: .7;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: opacity 0.4s;
 }
 
@@ -154,7 +159,7 @@ nav#autoNav .open-menu{
     z-index: 3;
 
     max-width: 700px;
-    font-size: 46px;
+    font-size: 4.6rem;
     font-weight: 400;
     color: #011C40;
 }
@@ -198,7 +203,7 @@ nav#autoNav .open-menu{
 }
 
 #members h2 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #A558D1;
     text-transform: uppercase;
 
@@ -225,13 +230,13 @@ nav#autoNav .open-menu{
 }
 
 .name {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #03738C;
 }
 
 .instagram a {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #03738C;
     text-decoration: none;
 
@@ -265,20 +270,20 @@ nav#autoNav .open-menu{
 
 .text-about h3 {
     color: #A558D1;
-    font-size: 14px;
+    font-size: 1.4rem;
 
     margin-bottom: 15px;
 }
 
 .text-about h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #212529;
 
     margin-bottom: 30px;
 }
 
 .text-about p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #495057;
 }
 
@@ -298,7 +303,7 @@ nav#autoNav .open-menu{
 }
 
 .metaverso-box1 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #011126;
     text-transform: uppercase;
 
@@ -308,7 +313,7 @@ nav#autoNav .open-menu{
 }
 
 .metaverso-box1 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #A558D1;
 
     margin-top: 25px;
@@ -321,7 +326,7 @@ nav#autoNav .open-menu{
 
 .text-metaverso p {
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #212529;
 }
 
@@ -343,13 +348,13 @@ nav#autoNav .open-menu{
 
 .metaverso-box2 h3 {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #A558D1;
 }
 
 .metaverso-box2 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     color: #011126;
     
     margin: 20px 0 60px;
@@ -373,12 +378,12 @@ nav#autoNav .open-menu{
 }
 
 .metaverso-box3 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
 }
 
 .metaverso-box3 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     margin: 20px 0 60px;
 }
 
@@ -393,7 +398,7 @@ nav#autoNav .open-menu{
 }
 
 .metaverso-box4 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #011126;
     max-width: 700px;
 }
@@ -416,7 +421,7 @@ nav#autoNav .open-menu{
 }
 
 .metaverso-box5 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     color: #011126;
 
@@ -451,7 +456,7 @@ nav#autoNav .open-menu{
 
 .midias-box1 h2 {
     color: #212529;
-    font-size: 40px;
+    font-size: 4rem;
     text-transform: uppercase;
 
     padding-left: 25px;
@@ -461,7 +466,7 @@ nav#autoNav .open-menu{
 
 .midias-box1 h3 {
     color: #03738C;
-    font-size: 16px;
+    font-size: 1.6rem;
 
     margin-top: 25px;
 }
@@ -517,13 +522,13 @@ nav#autoNav .open-menu{
 
 .midias-beneficios h3 {
     color: #03738C;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .midias-beneficios h2 {
     margin: 20px 0 40px;
 
-    font-size: 40px;
+    font-size: 4rem;
     color: #212529;
 }
 
@@ -579,12 +584,12 @@ nav#autoNav .open-menu{
 }
 
 .title-midias-box3 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #03738C;
 }
 
 .title-midias-box3 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #011126;
 
     margin: 20px auto 60px;
@@ -606,7 +611,7 @@ nav#autoNav .open-menu{
 .text-midia-flex h3 {
     text-transform: initial;
     color: #03738C;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .text-midia-flex p {
@@ -634,7 +639,7 @@ nav#autoNav .open-menu{
 }
 
 .bio-box1 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #212529;
     text-transform: uppercase;
 
@@ -644,7 +649,7 @@ nav#autoNav .open-menu{
 }
 
 .bio-box1 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #00856F;
 
     margin-top: 25px;
@@ -657,7 +662,7 @@ nav#autoNav .open-menu{
 
 .text-bio-box1 p {
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .bg-bio-box1 {
@@ -680,12 +685,12 @@ nav#autoNav .open-menu{
 }
 
 .bio-box2 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
 }
 
 .bio-box2 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     margin: 20px 0 60px;
 }
 
@@ -701,13 +706,13 @@ nav#autoNav .open-menu{
 
 .bio-box3 h3 {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #00856F;
 }
 
 .bio-box3 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     color: #011126;
     
     margin: 20px auto 60px;
@@ -747,12 +752,12 @@ nav#autoNav .open-menu{
 }
 
 .title-bio-box4 h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #00856F;
 }
 
 .title-bio-box4 h2 {
-    font-size: 40px;
+    font-size: 4rem;
     color: #212529;
     margin: 20px 0 40px;
 }
@@ -782,7 +787,7 @@ nav#autoNav .open-menu{
 
 .single-flex-box4 h4 {
     color: #212529;
-    font-size: 24px;
+    font-size: 2.4rem;
 
     margin-bottom: 20px;
 }
@@ -822,7 +827,7 @@ footer .center {
     padding: 5px 0;
 
     border: none;
-    font-size: 18px;
+    font-size: 1.8rem;
 
     opacity: .6;
 }
@@ -845,7 +850,7 @@ footer .center {
 
 .referencias h2 {
     color: #212529;
-    font-size: 24px;
+    font-size: 2.4rem;
     margin-right: 30px;
 }
 
@@ -853,7 +858,7 @@ footer .center {
     display: block;
     color: #011C40;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-top: 20px;
 
     transition: .4s;
@@ -882,7 +887,7 @@ footer .center {
 footer h1 {
     font-weight: 400;
     color: #011C40;
-    font-size: 36px;
+    font-size: 3.6rem;
     
     max-width: 600px;
     padding-left: 20px;
@@ -890,7 +895,7 @@ footer h1 {
 
 .dev p {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: white;
     font-weight: 300;
 
@@ -1008,7 +1013,7 @@ footer h1 {
     #textMain h1 {
         max-width: 100%;
 
-        font-size: 40px;
+        font-size: 4rem;
         text-align: center;
         line-height: 55px;
 
@@ -1039,7 +1044,7 @@ footer h1 {
     }
       
     #members h2 {
-        font-size: 21px;
+        font-size: 2.1rem;
         text-align: center;
 
         margin-bottom: 40px;
@@ -1052,11 +1057,11 @@ footer h1 {
     }
       
     .name {
-      font-size: 21px;
+      font-size: 2.1rem;
     }
       
     .instagram a {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
       
     .line-members {
